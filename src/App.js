@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import styled from 'styled-components'
+
+const FooterWrapper = styled.div`
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 500;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <FooterWrapper>
+        Copyright © 2022 arschettino
+      </FooterWrapper>
+    </>
   );
 }
 
